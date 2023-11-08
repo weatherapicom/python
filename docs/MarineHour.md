@@ -1,4 +1,4 @@
-# ForecastHour
+# MarineHour
 
 ## Properties
 Name | Type | Description | Notes
@@ -35,6 +35,12 @@ Name | Type | Description | Notes
 **vis_miles** | **float** |  | [optional] 
 **gust_mph** | **float** |  | [optional] 
 **gust_kph** | **float** |  | [optional] 
+**sig_ht_mt** | **float** |  | [optional] 
+**swell_ht_mt** | **float** |  | [optional] 
+**swell_ht_ft** | **float** |  | [optional] 
+**swell_dir** | **float** |  | [optional] 
+**swell_dir_16_point** | **float** |  | [optional] 
+**swell_period_secs** | **float** |  | [optional] 
 **uv** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

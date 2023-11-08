@@ -16,23 +16,80 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.alerts_alert import AlertsAlert  # noqa: E501
+from swagger_client.api.apis_api import APIsApi  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestAlertsAlert(unittest.TestCase):
-    """AlertsAlert unit test stubs"""
+class TestAPIsApi(unittest.TestCase):
+    """APIsApi unit test stubs"""
 
     def setUp(self):
-        pass
+        self.api = swagger_client.api.apis_api.APIsApi()  # noqa: E501
 
     def tearDown(self):
         pass
 
-    def testAlertsAlert(self):
-        """Test AlertsAlert"""
-        # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.alerts_alert.AlertsAlert()  # noqa: E501
+    def test_astronomy(self):
+        """Test case for astronomy
+
+        Astronomy API  # noqa: E501
+        """
+        pass
+
+    def test_forecast_weather(self):
+        """Test case for forecast_weather
+
+        Forecast API  # noqa: E501
+        """
+        pass
+
+    def test_future_weather(self):
+        """Test case for future_weather
+
+        Future API  # noqa: E501
+        """
+        pass
+
+    def test_history_weather(self):
+        """Test case for history_weather
+
+        History API  # noqa: E501
+        """
+        pass
+
+    def test_ip_lookup(self):
+        """Test case for ip_lookup
+
+        IP Lookup API  # noqa: E501
+        """
+        pass
+
+    def test_marine_weather(self):
+        """Test case for marine_weather
+
+        Marine Weather API  # noqa: E501
+        """
+        pass
+
+    def test_realtime_weather(self):
+        """Test case for realtime_weather
+
+        Realtime API  # noqa: E501
+        """
+        pass
+
+    def test_search_autocomplete_weather(self):
+        """Test case for search_autocomplete_weather
+
+        Search/Autocomplete API  # noqa: E501
+        """
+        pass
+
+    def test_time_zone(self):
+        """Test case for time_zone
+
+        Time Zone API  # noqa: E501
+        """
         pass
 
 

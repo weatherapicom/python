@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.alerts_alert import AlertsAlert  # noqa: E501
+from swagger_client.models.marine_forecastday import MarineForecastday  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestAlertsAlert(unittest.TestCase):
-    """AlertsAlert unit test stubs"""
+class TestMarineForecastday(unittest.TestCase):
+    """MarineForecastday unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestAlertsAlert(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testAlertsAlert(self):
-        """Test AlertsAlert"""
+    def testMarineForecastday(self):
+        """Test MarineForecastday"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.alerts_alert.AlertsAlert()  # noqa: E501
+        # model = swagger_client.models.marine_forecastday.MarineForecastday()  # noqa: E501
         pass
 
 
