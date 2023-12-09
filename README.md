@@ -47,9 +47,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/weatherapicom/python.git#egg=python
+pip install git+https://github.com/weatherapicom/python.git#egg=weatherapipython
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/weatherapicom/python.git#egg=python`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/weatherapicom/python.git#egg=weatherapipython`)
 
 Then import the package:
 ```python
