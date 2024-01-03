@@ -1,3 +1,5 @@
+[![Ceasefire Now](https://badge.techforpalestine.org/default)](https://techforpalestine.org/learn-more)
+
 # Python client for WeatherAPI.com
 
 # Introduction
