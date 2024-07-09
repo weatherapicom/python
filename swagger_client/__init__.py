@@ -15,34 +15,51 @@
 
 from __future__ import absolute_import
 
+import sys
+
+# import all weatherapi subpackages into swagger_client namespace
+import weatherapi
+from weatherapi import *
+
 # import apis into sdk package
-from swagger_client.api.apis_api import APIsApi
+from weatherapi.api.apis_api import APIsApi
 
 # import ApiClient
-from swagger_client.api_client import ApiClient
-from swagger_client.configuration import Configuration
+from weatherapi.api_client import ApiClient
+from weatherapi.configuration import Configuration
 # import models into sdk package
-from swagger_client.models.alerts import Alerts
-from swagger_client.models.alerts_alert import AlertsAlert
-from swagger_client.models.array_of_search import ArrayOfSearch
-from swagger_client.models.astronomy import Astronomy
-from swagger_client.models.astronomy_astro import AstronomyAstro
-from swagger_client.models.current import Current
-from swagger_client.models.current_air_quality import CurrentAirQuality
-from swagger_client.models.current_condition import CurrentCondition
-from swagger_client.models.error400 import Error400
-from swagger_client.models.error401 import Error401
-from swagger_client.models.error403 import Error403
-from swagger_client.models.forecast import Forecast
-from swagger_client.models.forecast_astro import ForecastAstro
-from swagger_client.models.forecast_condition import ForecastCondition
-from swagger_client.models.forecast_day import ForecastDay
-from swagger_client.models.forecast_day_condition import ForecastDayCondition
-from swagger_client.models.forecast_forecastday import ForecastForecastday
-from swagger_client.models.forecast_hour import ForecastHour
-from swagger_client.models.ip import Ip
-from swagger_client.models.location import Location
-from swagger_client.models.marine import Marine
-from swagger_client.models.marine_forecastday import MarineForecastday
-from swagger_client.models.marine_hour import MarineHour
-from swagger_client.models.search import Search
+from weatherapi.models.alerts import Alerts
+from weatherapi.models.alerts_alert import AlertsAlert
+from weatherapi.models.array_of_search import ArrayOfSearch
+from weatherapi.models.astronomy import Astronomy
+from weatherapi.models.astronomy_astro import AstronomyAstro
+from weatherapi.models.current import Current
+from weatherapi.models.current_air_quality import CurrentAirQuality
+from weatherapi.models.current_condition import CurrentCondition
+from weatherapi.models.error400 import Error400
+from weatherapi.models.error401 import Error401
+from weatherapi.models.error403 import Error403
+from weatherapi.models.forecast import Forecast
+from weatherapi.models.forecast_astro import ForecastAstro
+from weatherapi.models.forecast_condition import ForecastCondition
+from weatherapi.models.forecast_day import ForecastDay
+from weatherapi.models.forecast_day_condition import ForecastDayCondition
+from weatherapi.models.forecast_forecastday import ForecastForecastday
+from weatherapi.models.forecast_hour import ForecastHour
+from weatherapi.models.ip import Ip
+from weatherapi.models.location import Location
+from weatherapi.models.marine import Marine
+from weatherapi.models.marine_forecastday import MarineForecastday
+from weatherapi.models.marine_hour import MarineHour
+from weatherapi.models.search import Search
+
+# Alias all weatherapi module names to swagger_client names, so that
+# imports of swagger_client.foo work.
+swagger_packages = {
+    k.replace('weatherapi', 'swagger_client'): v
+    for k, v in sys.modules.items()
+    if k.startswith('weatherapi')
+}
+sys.modules.update(swagger_packages)
+del swagger_packages
+
