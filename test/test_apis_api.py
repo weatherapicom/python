@@ -15,16 +15,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.apis_api import APIsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.api.apis_api import APIsApi  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestAPIsApi(unittest.TestCase):
     """APIsApi unit test stubs"""
 
     def setUp(self):
-        self.api = swagger_client.api.apis_api.APIsApi()  # noqa: E501
+        self.api = weatherapi.api.apis_api.APIsApi()  # noqa: E501
 
     def tearDown(self):
         pass

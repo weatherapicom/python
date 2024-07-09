@@ -1,4 +1,4 @@
-# swagger_client.APIsApi
+# weatherapi.APIsApi
 
 All URIs are relative to *https://api.weatherapi.com/v1*
 
@@ -26,18 +26,18 @@ Return Location and Astronomy Object
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 dt = '2013-10-20' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
 
@@ -82,18 +82,18 @@ Forecast weather API method returns, depending upon your price plan level, upto 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 days = 56 # int | Number of days of weather forecast. Value ranges from 1 to 14
 dt = '2013-10-20' # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01' (optional)
@@ -152,18 +152,18 @@ Future weather API method returns weather in a 3 hourly interval in future for a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 dt = '2013-10-20' # date | Date should be between 14 days and 300 days from today in the future in yyyy-MM-dd format (i.e. dt=2023-01-01) (optional)
 lang = 'lang_example' # str | Returns 'condition:text' field in API in the desired language.<br /> Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to check 'lang-code'. (optional)
@@ -210,18 +210,18 @@ History weather API method returns historical weather for a date on or after 1st
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 dt = '2013-10-20' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
 unixdt = 56 # int | Please either pass 'dt' or 'unixdt' and not both in same request.<br />unixdt should be on or after 1st Jan, 2015 in Unix format (optional)
@@ -276,18 +276,18 @@ IP Lookup API method allows a user to get up to date information for an IP addre
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass IP address.
 
 try:
@@ -330,18 +330,18 @@ Marine weather API method returns upto next 7 day (depending upon your price pla
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass Latitude/Longitude (decimal degree) which is on a sea/ocean. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 days = 56 # int | Number of days of weather forecast. Value ranges from 1 to 7
 dt = '2013-10-20' # date | Date should be between today and next 7 day in yyyy-MM-dd format. e.g. '2023-05-20' (optional)
@@ -394,18 +394,18 @@ Current weather or realtime weather API method allows a user to get up to date c
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 lang = 'lang_example' # str | Returns 'condition:text' field in API in the desired language.<br /> Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to check 'lang-code'. (optional)
 
@@ -450,18 +450,18 @@ WeatherAPI.com Search or Autocomplete API returns matching cities and towns as a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 
 try:
@@ -504,18 +504,18 @@ Return Location Object
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = weatherapi.Configuration()
 configuration.api_key['key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
+api_instance = weatherapi.APIsApi(weatherapi.ApiClient(configuration))
 q = 'q_example' # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more.
 
 try:

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.array_of_search import ArrayOfSearch  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.array_of_search import ArrayOfSearch  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestArrayOfSearch(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestArrayOfSearch(unittest.TestCase):
     def testArrayOfSearch(self):
         """Test ArrayOfSearch"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.array_of_search.ArrayOfSearch()  # noqa: E501
+        # model = weatherapi.models.array_of_search.ArrayOfSearch()  # noqa: E501
         pass
 
 

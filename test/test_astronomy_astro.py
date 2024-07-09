@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.astronomy_astro import AstronomyAstro  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.astronomy_astro import AstronomyAstro  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestAstronomyAstro(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestAstronomyAstro(unittest.TestCase):
     def testAstronomyAstro(self):
         """Test AstronomyAstro"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.astronomy_astro.AstronomyAstro()  # noqa: E501
+        # model = weatherapi.models.astronomy_astro.AstronomyAstro()  # noqa: E501
         pass
 
 
