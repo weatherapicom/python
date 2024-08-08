@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.error401 import Error401  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.error401 import Error401  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestError401(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestError401(unittest.TestCase):
     def testError401(self):
         """Test Error401"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.error401.Error401()  # noqa: E501
+        # model = weatherapi.models.error401.Error401()  # noqa: E501
         pass
 
 

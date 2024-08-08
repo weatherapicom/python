@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.ip import Ip  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.ip import Ip  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestIp(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestIp(unittest.TestCase):
     def testIp(self):
         """Test Ip"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.ip.Ip()  # noqa: E501
+        # model = weatherapi.models.ip.Ip()  # noqa: E501
         pass
 
 

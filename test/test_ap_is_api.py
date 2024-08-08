@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.ap_is_api import APIsApi  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.api.ap_is_api import APIsApi  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestAPIsApi(unittest.TestCase):

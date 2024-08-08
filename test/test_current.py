@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.current import Current  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.current import Current  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestCurrent(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCurrent(unittest.TestCase):
     def testCurrent(self):
         """Test Current"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.current.Current()  # noqa: E501
+        # model = weatherapi.models.current.Current()  # noqa: E501
         pass
 
 

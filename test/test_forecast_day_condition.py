@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.forecast_day_condition import ForecastDayCondition  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.forecast_day_condition import ForecastDayCondition  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestForecastDayCondition(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestForecastDayCondition(unittest.TestCase):
     def testForecastDayCondition(self):
         """Test ForecastDayCondition"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.forecast_day_condition.ForecastDayCondition()  # noqa: E501
+        # model = weatherapi.models.forecast_day_condition.ForecastDayCondition()  # noqa: E501
         pass
 
 

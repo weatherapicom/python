@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.marine import Marine  # noqa: E501
-from swagger_client.rest import ApiException
+import weatherapi
+from weatherapi.models.marine import Marine  # noqa: E501
+from weatherapi.rest import ApiException
 
 
 class TestMarine(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestMarine(unittest.TestCase):
     def testMarine(self):
         """Test Marine"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.marine.Marine()  # noqa: E501
+        # model = weatherapi.models.marine.Marine()  # noqa: E501
         pass
 
 
